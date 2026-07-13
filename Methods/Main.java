@@ -2,8 +2,8 @@ import java.util.Vector;
 
 public class Main {
 	public static void main(String[] args) {
-		int a = 2, b = 3;
-		int x = 5, y = 7;
+		int a = 2, b = 3,
+			x = 5, y = 7;
 
 		System.out.println(a + " + " + b + " = " + sum(a, b));
 		System.out.println(x + " + " + y + " = " + sum(x, y));
@@ -151,7 +151,7 @@ public class Main {
 		long sum = 0;
 		
 		for(int i = 1; i <= n; i++)
-			sum += i * i;
+			sum += (long)i * i;
 			
 		return sum;
 	}
@@ -254,6 +254,7 @@ public class Main {
 
 	static void checkPrimality(int n) {
 		boolean isPrime = prime(n);
+		
 		if(isPrime == true)
 			System.out.println(n + " is prime");
 		else
