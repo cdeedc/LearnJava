@@ -18,7 +18,7 @@ public class Main {
         Profesor prof1 = new Profesor("Stefan", "Alex", 10000.0d);
         System.out.println(prof1.nume);
         System.out.println(prof1.prenume);
-        prof1.afisare();
+        prof1.afisareSalariu();
 	}
 }
 
@@ -49,7 +49,7 @@ class Elev {
     }
     
     public void afisare() {
-        System.out.println(nume);
+        System.out.println(nume + " " + prenume);
     }
 
     public void afisareMedieAnuala() {
@@ -91,6 +91,10 @@ class Profesor {
     }
 
     public void afisare() {
+        System.out.println(nume + " " + prenume);
+    }
+
+    public void afisareSalariu() {
         System.out.println(nume + " " + prenume + " " + salariu + "$");
     }
 
