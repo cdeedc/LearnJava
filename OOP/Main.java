@@ -2,10 +2,14 @@ package LearnJava.OOP;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello World");
 	    Elev e = new Elev();
-	    Elev e2 = new Elev("Ion");
-	    e2.afisare();
+        e.afisare();
+
+	    Elev e1 = new Elev("Ion");
+	    e1.afisare();
+
+        Elev e2 = new Elev("Popescu", "Alex", 9.95d);
+        e2.afisareMedieAnuala();
 	}
 }
 
@@ -40,7 +44,7 @@ class Elev {
     }
 
     public void afisareMedieAnuala() {
-        System.out.println();
+        System.out.println(nume + " " + prenume + " " + medieAnuala);
     }
 
     public double getMedieAnuala() {
