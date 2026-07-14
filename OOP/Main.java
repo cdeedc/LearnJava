@@ -14,6 +14,11 @@ public class Main {
 
         Profesor prof = new Profesor("Popescu");
         System.out.println(prof.nume);
+
+        Profesor prof1 = new Profesor("Stefan", "Alex", 10000.0d);
+        System.out.println(prof1.nume);
+        System.out.println(prof1.prenume);
+        prof1.afisare();
 	}
 }
 
@@ -87,5 +92,9 @@ class Profesor {
 
     public void afisare() {
         System.out.println(nume + " " + prenume + " " + salariu + "$");
+    }
+
+    public double getSalariu() {
+        return salariu;
     }
 }
