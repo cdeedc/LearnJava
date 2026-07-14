@@ -1,6 +1,7 @@
 ## Java course
 
 * Methods
+* OOP (Object Oriented Programming) > Simple application
 
 ## Preparation
 
