@@ -1,4 +1,4 @@
-package LearnJava;
+package LearnJava.OOP;
 
 public class Main {
 	public static void main(String[] args) {
@@ -15,7 +15,9 @@ class Elev {
     public double medieAnuala;
     
     public Elev() {
-        
+        nume = "";
+        prenume = "";
+        medieAnuala = 0.0d;
     }
     
     public Elev(String n) {
@@ -25,6 +27,12 @@ class Elev {
     public Elev(String n, String p) {
         nume = n;
         prenume = p;
+    }
+
+    public Elev(String n, String p, double m) {
+        nume = n;
+        prenume = p;
+        medieAnuala = m;
     }
     
     public void afisare() {
@@ -39,3 +47,4 @@ class Elev {
         return medieAnuala;
     }
 }
+
