@@ -9,21 +9,21 @@ public class Main {
 	    Elev e = new Elev();
         e.afisare();
 
-	    /**Elev e1 = new Elev("Ion");
+	    Elev e1 = new Elev("Ion");
 	    e1.afisare();
 
         Elev e2 = new Elev("Popescu", "Alex", 9.95d);
         e2.afisareMedieAnuala();
-        System.out.println(e2.getMedieAnuala());
+        System.out.println(e2.getMedieAnuala() + "\n");
 
         Profesor prof = new Profesor("Popescu");
-        System.out.println(prof.nume);
+        System.out.println(prof.nume + "\n");
 
         Profesor prof1 = new Profesor("Stefan", "Alex", 10000.0d);
         System.out.println(prof1.nume);
         System.out.println(prof1.prenume);
         prof1.afisareSalariu();
-        */
+        System.out.println();
 	}
 }
 
@@ -118,5 +118,30 @@ class Profesor extends Persoana {
 
     public double getSalariu() {
         return salariu;
+    }
+}
+
+class Clasa {
+    public Profesor profDiriginte;
+    public Elev[] elevi;
+    public char litera;
+
+    Clasa() {
+        profDiriginte = null;
+        elevi = null;
+        litera = 'Z';
+    }
+
+    
+
+    public void afisare() {
+        System.out.print("Profesor diriginte: ");
+        profDiriginte.afisare();
+        System.out.println("\n");
+
+        for(int i = 0; i < elevi.length; i++) {
+            elevi[i].afisare();
+            System.out.println("\n");
+        }
     }
 }
