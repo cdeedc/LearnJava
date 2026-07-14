@@ -3,19 +3,28 @@ package OOP2;
 
 public class Main {
 	public static void main(String[] args) {
+        // Persoana
         Persoana p = new Persoana("Ion", "Ion");
         p.afisare();
 
+        // Elev
 	    Elev e = new Elev();
         e.afisare();
+        e.nume = "Zamfir";
+        e.prenume = "Dan";
+        e.setMedieAnuala(9.85);
 
 	    Elev e1 = new Elev("Ion");
 	    e1.afisare();
+        e1.nume = "Pop";
+        e1.prenume = "Mihai";
+        e1.setMedieAnuala(9.53d);
 
         Elev e2 = new Elev("Popescu", "Alex", 9.95d);
         e2.afisareMedieAnuala();
         System.out.println(e2.getMedieAnuala() + "\n");
 
+        // Profesor
         Profesor prof = new Profesor("Popescu");
         System.out.println(prof.nume + "\n");
 
@@ -24,6 +33,13 @@ public class Main {
         System.out.println(prof1.prenume);
         prof1.afisareSalariu();
         System.out.println();
+
+        // Clasa
+        Elev[] elevi = { e, e1, e2 };
+        char litera = 'C';
+        int nivel = 11;
+        Clasa clasa = new Clasa(prof1, elevi, litera, nivel);
+        clasa.afisare();
 	}
 }
 
@@ -133,14 +149,16 @@ class Clasa {
     public Profesor profDiriginte;
     public Elev[] elevi;
     public char litera;
+    public int nivel;
 
     Clasa() {
         profDiriginte = null;
         elevi = null;
         litera = 'Z';
+        nivel = 13;
     }
 
-    Clasa(Profesor p, Elev[] e, char l) {
+    Clasa(Profesor p, Elev[] e, char l, int n) {
         profDiriginte = new Profesor();
         profDiriginte.nume = p.nume;
         profDiriginte.prenume = p.prenume;
@@ -153,16 +171,25 @@ class Clasa {
             elevi[i].prenume = e[i].prenume;
             elevi[i].setMedieAnuala(e[i].getMedieAnuala());
         }
+
+        litera = l;
+        nivel = n;
     }
 
     public void afisare() {
+        System.out.println("==================");
+        System.out.println("Clasa " + nivel + litera);
+
         System.out.print("Profesor diriginte: ");
         profDiriginte.afisare();
-        System.out.println("\n");
+        // System.out.println("\n");
 
+        System.out.print("Elevii clasei (" + nivel + litera + "):\n");
         for(int i = 0; i < elevi.length; i++) {
             elevi[i].afisare();
-            System.out.println("\n");
+            // System.out.println("\n");
         }
+
+        System.out.println("==================\n");
     }
 }
