@@ -24,5 +24,5 @@ with the note that the message ```"Update"``` can be subsituted to any desired s
 ## References
 
 * https://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/NOTES/Java_vs.html#simpleEx
-* Online IDE `GDB': https://www.onlinegdb.com/
+* Online IDE `GDB`: https://www.onlinegdb.com/
 * Courses from `w3schools`: https://www.w3schools.com/java/
