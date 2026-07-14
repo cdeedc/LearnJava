@@ -76,6 +76,10 @@ class Elev extends Persoana {
         System.out.println(nume + " " + prenume);
     }
 
+    public void setMedieAnuala(double m) {
+        medieAnuala = m;
+    }
+
     public void afisareMedieAnuala() {
         System.out.println(nume + " " + prenume + " " + medieAnuala);
     }
@@ -112,6 +116,10 @@ class Profesor extends Persoana {
         System.out.println(nume + " " + prenume);
     }
 
+    public void setSalariu(double s) {
+        salariu = s;
+    }
+
     public void afisareSalariu() {
         System.out.println(nume + " " + prenume + " " + salariu + "$");
     }
@@ -132,7 +140,20 @@ class Clasa {
         litera = 'Z';
     }
 
-    
+    Clasa(Profesor p, Elev[] e, char l) {
+        profDiriginte = new Profesor();
+        profDiriginte.nume = p.nume;
+        profDiriginte.prenume = p.prenume;
+        profDiriginte.setSalariu(p.getSalariu());
+
+        elevi = new Elev[e.length];
+        for(int i = 0; i < e.length; i++) {
+            elevi[i] = new Elev();
+            elevi[i].nume = e[i].nume;
+            elevi[i].prenume = e[i].prenume;
+            elevi[i].setMedieAnuala(e[i].getMedieAnuala());
+        }
+    }
 
     public void afisare() {
         System.out.print("Profesor diriginte: ");
