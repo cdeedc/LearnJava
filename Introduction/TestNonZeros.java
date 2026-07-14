@@ -1,13 +1,31 @@
 public class TestNonZeros {
     public static void main(String[] args) {
-        int[] arr = { 0, 1, 2, 3, 4, 0, 5, 0, 6 };
+        int[] arrA = { 0, 1, 2, 3, 2 };
+        testArray(arrA);
+
+        int[] arrB = { 0, 0 };
+        testArray(arrB);
+
+        int[] arrC = { 22, 0, -5, 0, 126 };
+        testArray(arrC);
+
+        int[] arrD = { 1, 0 };
+        testArray(arrD);
+    }
+
+    public static void testArray(int[] arr) {
+        System.out.print("Passing ");
+        printArray(arr);
+        System.out.print(" ... got back ");
         printArray(nonZeros(arr));
+        System.out.println();
     }
 
     public static void printArray(int[] arr) {
+        System.out.print("[ ");
         for(int i = 0; i < arr.length; i++)
-            System.out.println(arr[i] + " ");
-        System.out.flush();
+            System.out.print(arr[i] + " ");
+        System.out.print("]");
     }
 
     public static int[] nonZeros(int[] arr) {

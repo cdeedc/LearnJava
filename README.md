@@ -6,6 +6,7 @@
 
 * `git-bash`: https://git-scm.com/install/windows
 * `Visual Studio Code` for `Java`: https://aka.ms/vscode-java-installer-win
+* Download `Java`: https://adoptium.net/
 
 
 In order to run a file `Main.java`, the following command must be executed (in `Visual Studio Code`):
