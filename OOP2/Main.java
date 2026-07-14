@@ -154,8 +154,8 @@ class Clasa {
     Clasa() {
         profDiriginte = null;
         elevi = null;
-        litera = 'Z';
-        nivel = 13;
+        litera = 'A';
+        nivel = 0;
     }
 
     Clasa(Profesor p, Elev[] e, char l, int n) {
