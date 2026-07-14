@@ -1,8 +1,12 @@
-package LearnJava.OOP;
+// Extended version
+package OOP2;
 
 public class Main {
 	public static void main(String[] args) {
-	    Elev e = new Elev();
+        Persoana p = new Persoana("Ion", "Ion");
+        p.afisare();
+
+	    /**Elev e = new Elev();
         e.afisare();
 
 	    Elev e1 = new Elev("Ion");
@@ -19,32 +23,52 @@ public class Main {
         System.out.println(prof1.nume);
         System.out.println(prof1.prenume);
         prof1.afisareSalariu();
+        */
 	}
 }
 
-class Elev {
+class Persoana {
     public String nume;
     public String prenume;
+
+    Persoana() {
+        nume = "";
+        prenume = "";
+    }
+
+    Persoana(String n) {
+        nume = n;
+        prenume = "";
+    }
+
+    Persoana(String n, String p) {
+        nume = n;
+        prenume = p;
+    }
+
+    public void afisare() {
+        System.out.println(nume + " " + prenume);
+    }
+}
+
+class Elev extends Persoana {
     private double medieAnuala;
     
     public Elev() {
-        nume = "";
-        prenume = "";
+        super();
         medieAnuala = 0.0d;
     }
     
     public Elev(String n) {
-        nume = n;
+        super(n);
     }
 
     public Elev(String n, String p) {
-        nume = n;
-        prenume = p;
+        super(n, p);
     }
 
     public Elev(String n, String p, double m) {
-        nume = n;
-        prenume = p;
+        super(n, p);
         medieAnuala = m;
     }
     
