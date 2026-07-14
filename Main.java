@@ -30,4 +30,12 @@ class Elev {
     public void afisare() {
         System.out.println(nume);
     }
+
+    public void afisareMedieAnuala() {
+        System.out.println();
+    }
+
+    public double getMedieAnuala() {
+        return medieAnuala;
+    }
 }
