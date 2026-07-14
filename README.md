@@ -13,7 +13,7 @@ In order to run a file `Main.java`, the following command must be executed (in `
 javac Main.java ; java Main
 ```
 
-For updating the `GitHub` repository, execute:
+For updating the `GitHub` repository, from the base folder (i.e. `LearnJava`) execute:
 ```terminal
 git add . ;  git commit -m "Update" ; git push origin
 ```
