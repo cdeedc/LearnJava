@@ -6,10 +6,10 @@ public class Main {
         Persoana p = new Persoana("Ion", "Ion");
         p.afisare();
 
-	    /**Elev e = new Elev();
+	    Elev e = new Elev();
         e.afisare();
 
-	    Elev e1 = new Elev("Ion");
+	    /**Elev e1 = new Elev("Ion");
 	    e1.afisare();
 
         Elev e2 = new Elev("Popescu", "Alex", 9.95d);
@@ -85,32 +85,26 @@ class Elev extends Persoana {
     }
 }
 
-class Profesor {
-    public String nume;
-    public String prenume;
+class Profesor extends Persoana {
     private double salariu;
 
     public Profesor() {
-        nume = "";
-        prenume = "";
+        super();
         salariu = 0.0d;
     }
 
     public Profesor(String n) {
-        nume = n;
-        prenume = "";
+        super(n);
         salariu = 0.0d;
     }
 
     public Profesor(String n, String p) {
-        nume = n;
-        prenume = p;
+        super(n, p);
         salariu = 0.0d;
     }
 
     public Profesor(String n, String p, double s) {
-        nume = n;
-        prenume = p;
+        super(n, p);
         salariu = s;
     }
 
