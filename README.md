@@ -19,3 +19,10 @@ For updating the `GitHub` repository, from the base folder (i.e. `LearnJava`) ex
 git add . ;  git commit -m "Update" ; git push origin
 ```
 with the note that the message ```"Update"``` can be subsituted to any desired string.
+
+
+## References
+
+* https://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/NOTES/Java_vs.html#simpleEx
+* Online IDE `GDB': https://www.onlinegdb.com/
+* Courses from `w3schools`: https://www.w3schools.com/java/
