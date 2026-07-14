@@ -26,3 +26,4 @@ with the note that the message ```"Update"``` can be subsituted to any desired s
 * Java vs C++:https://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/NOTES/Java_vs.html#simpleEx
 * Online IDE `GDB`: https://www.onlinegdb.com/
 * Courses from `w3schools`: https://www.w3schools.com/java/
+* https://se-education.org/se-book/cppToJava/
