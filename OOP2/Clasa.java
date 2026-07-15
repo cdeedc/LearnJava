@@ -42,9 +42,17 @@ public class Clasa {
         elevi[poz] = e;
     }
 
+    public void setNivel(Nivel n) {
+        nivel = n;
+    }
+
+    public void setLitera(Litera l) {
+        litera = l;
+    }
+
     public void afisare() {
         System.out.println("==================");
-        System.out.println(">>> Clasa " + nivel + litera + " <<<");
+        System.out.println(">>> Clasa a " + nivel + "-a " + litera + " <<<");
 
         System.out.print("Profesor diriginte: ");
         profDiriginte.afisare();

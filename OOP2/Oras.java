@@ -1,6 +1,6 @@
 public class Oras {
-    Scoala[] scoli;
-    ///
+    public Scoala[] scoli;
+    public String nume;
 
     public Oras() {
 
