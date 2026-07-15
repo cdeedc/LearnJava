@@ -21,6 +21,10 @@ git add . ;  git commit -m "Update" ; git push origin
 ```
 with the note that the message ```"Update"``` can be subsituted to any desired string.
 
+For logout purposes,
+```terminal
+git config --global --unset credential.helper
+```
 
 ## References
 
