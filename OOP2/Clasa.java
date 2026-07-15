@@ -51,8 +51,9 @@ public class Clasa {
     }
 
     public void afisare() {
-        System.out.println("==================");
+        System.out.println("==========================");
         System.out.println(">>> Clasa a " + nivel + "-a " + litera + " <<<");
+        System.out.println("==========================");
 
         System.out.print("Profesor diriginte: ");
         profDiriginte.afisare();
@@ -62,6 +63,6 @@ public class Clasa {
             elevi[i].afisare();
         }
 
-        System.out.println("==================\n");
+        System.out.println("==========================");
     }
 }

@@ -24,8 +24,9 @@ public class Scoala {
     }
 
     public void afisare() {
-        System.out.println("==============================");
+        System.out.println("==============================================");
         System.out.println(">>>> " + nume + " <<<<");
+        System.out.println("==============================================");
 
         System.out.println("Cadre didactice:");
         for(int i = 0; i < profesori.length; i++)
@@ -40,6 +41,6 @@ public class Scoala {
 
         System.out.println("Adresa: " + adresa);
         
-        System.out.println("==============================");
+        System.out.println("==============================================");
     }
 }

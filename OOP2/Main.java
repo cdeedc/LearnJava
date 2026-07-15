@@ -41,18 +41,18 @@ public class Main {
 
         Clasa clasa2 = new Clasa(prof, elevi, Nivel.IX, Litera.A);
         clasa2.afisare();
+        System.out.println();
 
         // Scoala
         Clasa[] clase = new Clasa[16];
         int idx = 0;
         for(Nivel nivel : Nivel.values())
             for(Litera litera : Litera.values()) {
-                clase[idx].elevi = elevi;
-                clase[idx].profDiriginte = prof;
-                clase[idx].setNivel(nivel);
-                clase[idx].setLitera(litera);
+                Clasa cls = new Clasa(prof, elevi, nivel, litera);
+                clase[idx] = cls;
                 idx++;    
             }
+        // Clasa[] clase = { clasa, clasa2 };
         Profesor[] profs = { prof, prof1 };
         String adr = "Str. Egalitatii";
         Scoala scoala = new Scoala(profs, clase, prof, adr, "Colegiul National \"Zinca Golescu\"");
