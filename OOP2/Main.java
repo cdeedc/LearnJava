@@ -180,12 +180,10 @@ class Clasa {
 
         System.out.print("Profesor diriginte: ");
         profDiriginte.afisare();
-        // System.out.println("\n");
 
         System.out.print("Elevii clasei (" + nivel + litera + "):\n");
         for(int i = 0; i < elevi.length; i++) {
             elevi[i].afisare();
-            // System.out.println("\n");
         }
 
         System.out.println("==================\n");
