@@ -189,3 +189,18 @@ class Clasa {
         System.out.println("==================\n");
     }
 }
+
+class Scoala {
+    Profesor[] profesori;
+    Clasa[] clase;
+    Profesor profDirector;
+    public String adresa;
+
+    public void afisare() {
+        
+    }
+}
+
+class Oras {
+    Scoala[] scoli;
+}
