@@ -1,3 +1,5 @@
+package OOP2;
+
 public class Profesor extends Persoana {
     private double salariu;
 

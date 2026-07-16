@@ -1,3 +1,5 @@
+package OOP2;
+
 // Extended version
 public class Main {
     public static void main(String[] args) {

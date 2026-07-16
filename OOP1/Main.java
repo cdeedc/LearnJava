@@ -1,3 +1,5 @@
+package OOP1;
+
 public class Main {
 	public static void main(String[] args) {
 	    Elev e = new Elev();

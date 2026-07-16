@@ -1,3 +1,5 @@
+package OOP2;
+
 public class Oras {
     public Scoala[] scoli;
     public String nume;

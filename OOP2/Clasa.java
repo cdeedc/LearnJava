@@ -1,3 +1,5 @@
+package OOP2;
+
 enum Nivel { IX, X, XI, XII }
 enum Litera { A, B, C, D }
 

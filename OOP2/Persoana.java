@@ -1,3 +1,5 @@
+package OOP2;
+
 public class Persoana {
     public String nume;
     public String prenume;

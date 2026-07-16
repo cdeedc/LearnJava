@@ -1,3 +1,5 @@
+package OOP2;
+
 public class Scoala {
     public Profesor[] profesori;
     public Clasa[] clase;

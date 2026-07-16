@@ -1,3 +1,5 @@
+package OOP2;
+
 public class Elev extends Persoana {
     private double medieAnuala;
     
