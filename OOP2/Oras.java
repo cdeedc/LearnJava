@@ -14,9 +14,9 @@ public class Oras {
         System.out.println(">>>>>>>>>> Orasul " + nume + "<<<<<<<<<<<<<");
 
         System.out.println("Scoli componente:\n");
-        for(int i = 0; i < scoli.length; i++) {
-            scoli[i].afisare();
-        }
+        for(Scoala scoala : scoli)
+            if(scoala != null)
+                scoala.afisare();
 
         System.out.println("==============================================");
     }

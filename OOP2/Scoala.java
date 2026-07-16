@@ -31,12 +31,14 @@ public class Scoala {
         System.out.println("==============================================");
 
         System.out.println("Cadre didactice:");
-        for(int i = 0; i < profesori.length; i++)
-            profesori[i].afisare();
+        for(Profesor prof : profesori)
+            if(prof != null)
+                prof.afisare();
 
         System.out.println("Clasele scolii:");
-        for(int i = 0; i < clase.length; i++)
-            clase[i].afisare();
+        for(Clasa clasa : clase)
+            if(clasa != null)
+                clasa.afisare();
 
         System.out.print("Profesor director: ");
         profDirector.afisare();

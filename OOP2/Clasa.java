@@ -61,9 +61,9 @@ public class Clasa {
         profDiriginte.afisare();
 
         System.out.print("Elevii clasei (" + nivel + litera + "):\n");
-        for(int i = 0; i < elevi.length; i++) {
-            elevi[i].afisare();
-        }
+        for(Elev elev : elevi)
+            if(elev != null)
+                elev.afisare();
 
         System.out.println("==========================");
     }
