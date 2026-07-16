@@ -2,8 +2,8 @@
 
 * Methods
 * OOP (Object Oriented Programming)
-    ** Simple application
-    ** Inheritance
+    - Simple application
+    - Inheritance
 
 ## Preparation
 
