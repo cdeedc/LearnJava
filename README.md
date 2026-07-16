@@ -1,7 +1,9 @@
 ## Java course
 
 * Methods
-* OOP (Object Oriented Programming) > Simple application
+* OOP (Object Oriented Programming)
+    ** Simple application
+    ** Inheritance
 
 ## Preparation
 
