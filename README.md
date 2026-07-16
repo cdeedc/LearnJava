@@ -1,4 +1,4 @@
-## Java course
+## Java course (13.07.2026 - 16.07.2026)
 
 * Methods
 * OOP (Object Oriented Programming)
